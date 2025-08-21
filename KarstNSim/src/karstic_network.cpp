@@ -306,7 +306,7 @@ namespace KarstNSim {
 
 		std::ifstream myfile(connectivity_matrix_path);
 		if (!myfile.is_open()) {
-			std::cerr << "Error opening file after creation: " << strerror(errno) << std::endl;
+			std::cerr << "Error opening file " << connectivity_matrix_path << " after creation: " << strerror(errno) << std::endl;
 			return;
 		}
 
